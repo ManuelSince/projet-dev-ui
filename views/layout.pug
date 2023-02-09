@@ -2,7 +2,7 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel="stylesheet", href=`${stylesheet}`)
     script(src="https://cdn.jsdelivr.net/npm/chart.js")
     
     script
@@ -26,7 +26,7 @@ html
             .navitem
               a(href='/data') Data
           li 
-            button.btn.signin sign In sign up
+            button.btn.signin sign in
 
     main
       block content
