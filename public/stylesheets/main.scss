@@ -1,0 +1,73 @@
+
+// ----- global variables ------ 
+
+$primary-color: #DEE4E7;
+$secondary-color: '';
+$tertiary-color: '';
+$interactive-color: '';
+$desktop-margin-layout: 5vw;
+$mobile-margin-layout: 1%;
+
+$space1: 1rem;
+$space2: 2rem;
+$space3: 3rem;
+$br-10: 10px;
+
+// ------ layout -----
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  padding: $space1;
+  background-color: $secondary-color;
+  header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: $br-10 $br-10;
+      padding: 0px $space3;
+      background-color: $primary-color;
+      ul {
+        display: flex;
+        gap: $space1;
+        list-style: none;
+  
+      }
+      .img-container {
+        width: 60px;
+        height: 60px;
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: $space3;
+    section {
+      width: 15%;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          margin: $space1 0;
+          
+        }
+      }
+    }
+    .round {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+    }
+  }
+}
+.flex {
+  display: flex;
+}
+

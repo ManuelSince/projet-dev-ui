@@ -1,0 +1,55 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-color: "";
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px;
+  padding: 0px 3rem;
+  background-color: #DEE4E7;
+}
+body header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+body header nav .img-container {
+  width: 60px;
+  height: 60px;
+}
+body header nav .img-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+body footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+body footer section {
+  width: 15%;
+}
+body footer section ul {
+  list-style: none;
+  padding: 0;
+}
+body footer section ul li {
+  margin: 1rem 0;
+}
+body footer .round {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+
+.flex {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */

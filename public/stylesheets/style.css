@@ -1,0 +1,24 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.grid-3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.flex {
+  display: flex;
+}
+.flex.flex-direction-column {
+
+}
+
+#canvas-container {
+  width: 800px;
+  height: 600px;
+}
+  
