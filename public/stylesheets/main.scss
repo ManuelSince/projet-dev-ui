@@ -1,16 +1,20 @@
 
 // ----- global variables ------ 
 
-$primary-color: #DEE4E7;
-$secondary-color: '';
-$tertiary-color: '';
+$primary-color: rgba(252, 252, 252);
+$secondary-color: rgba(159, 196, 143);
+$tertiary-color: rgba(23, 49, 54);
+$fourth-color: rgba(237,249, 237);
+$fifth-color: rgba(249, 180, 99);
 $interactive-color: '';
 $desktop-margin-layout: 5vw;
 $mobile-margin-layout: 1%;
+$font-size : 13px;
 
 $space1: 1rem;
 $space2: 2rem;
 $space3: 3rem;
+$br-5: 5px;
 $br-10: 10px;
 
 // ------ layout -----
@@ -18,21 +22,26 @@ $br-10: 10px;
   box-sizing: border-box;
 }
 body {
+  margin: 0 $desktop-margin-layout;
   padding: $space1;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   header {
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-radius: $br-10 $br-10;
+      border-radius: $br-5 $br-5;
       padding: 0px $space3;
-      background-color: $primary-color;
+      background-color: $secondary-color;
       ul {
         display: flex;
         gap: $space1;
         list-style: none;
-  
+        li {
+          display: flex;
+          align-items: center;
+          
+        }
       }
       .img-container {
         width: 60px;
@@ -48,13 +57,17 @@ body {
     display: flex;
     justify-content: space-between;
     padding: $space3;
+    background-color: $secondary-color;
+    border-radius: $br-5 $br-5;
     section {
       width: 15%;
       ul {
         list-style: none;
         padding: 0;
+        
         li {
           margin: $space1 0;
+
           
         }
       }
@@ -70,4 +83,26 @@ body {
 .flex {
   display: flex;
 }
-
+.btn {
+  padding: 6px 13px;
+  background-color: $fifth-color;
+  color: $tertiary-color;
+  border: none;
+  border-radius: $br-10;
+  border: 1px solid transparent;
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-color;
+    border: 1px solid $fifth-color;
+    color: $fifth-color;
+  }
+}
+a {
+  text-decoration: none;
+  color: $tertiary-color;
+}
+main {
+  canvas {
+    display: none;
+  }
+}

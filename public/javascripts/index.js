@@ -7,6 +7,9 @@
   u.getByid('test').addEventListener('click', (e) => {
     console.log(e.target.value)
   })
+  u.getByid('signin').addEventListener('click', () => {
+    console.log('signing in')
+  })
   //--------------------------------------chart type bar --------------------------
 
   // const { getRelativePosition } = getRelative

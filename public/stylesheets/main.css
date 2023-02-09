@@ -3,21 +3,26 @@
 }
 
 body {
+  margin: 0 5vw;
   padding: 1rem;
-  background-color: "";
+  background-color: rgb(252, 252, 252);
 }
 body header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px 10px;
+  border-radius: 5px 5px;
   padding: 0px 3rem;
-  background-color: #DEE4E7;
+  background-color: rgb(159, 196, 143);
 }
 body header nav ul {
   display: flex;
   gap: 1rem;
   list-style: none;
+}
+body header nav ul li {
+  display: flex;
+  align-items: center;
 }
 body header nav .img-container {
   width: 60px;
@@ -32,6 +37,8 @@ body footer {
   display: flex;
   justify-content: space-between;
   padding: 3rem;
+  background-color: rgb(159, 196, 143);
+  border-radius: 5px 5px;
 }
 body footer section {
   width: 15%;
@@ -52,4 +59,28 @@ body footer .round {
 
 .flex {
   display: flex;
+}
+
+.btn {
+  padding: 6px 13px;
+  background-color: rgb(249, 180, 99);
+  color: rgb(23, 49, 54);
+  border: none;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(252, 252, 252);
+  border: 1px solid rgb(249, 180, 99);
+  color: rgb(249, 180, 99);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(23, 49, 54);
+}
+
+main canvas {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
