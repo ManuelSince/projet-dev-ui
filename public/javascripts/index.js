@@ -4,9 +4,6 @@
 // import {getRelative} from 'chart.js/helpers';
 
   const u = new Utils()
-  u.getByid('test').addEventListener('click', (e) => {
-    console.log(e.target.value)
-  })
   u.getByid('signin').addEventListener('click', () => {
     console.log('signing in')
   })
@@ -14,7 +11,7 @@
 
   // const { getRelativePosition } = getRelative
 
-  const ctx = u.getByid('myChart')
+  const ctx = u.getByid('graph1')
   const data = [
     { year: 2010, count: 10 },
     { year: 2011, count: 20 },

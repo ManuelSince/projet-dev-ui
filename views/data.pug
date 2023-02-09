@@ -3,3 +3,39 @@ extends layout
 block content
   main.data
     h1 #{title}
+    article.hero.flex.gap-1 
+      div.flex-column
+        h1 Lets make 
+        h2.fat something great
+      div.round 
+        img(src="https://fakeimg.pl/250x250/", alt="" class="round")
+    section.functionnalities
+      article.flex.card 
+        img(src="https://fakeimg.pl/250x250/", alt="fake")
+        div.flex-column 
+          h3 it's easy to use our wireframe 
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, voluptas! Non inventore 
+      
+      article.flex.card 
+        img(src="https://fakeimg.pl/250x250/", alt="fake")
+        div.text-center  
+          h3 it's easy to use our wireframe 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, facere obcaecati ullam 
+      
+      article.flex.card 
+        img(src="https://fakeimg.pl/250x250/", alt="fake")
+        div.text-center 
+          h3 it's easy to use our wireframe 
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rati
+    
+    .grid 
+      .one 
+        canvas#graph1
+      .two
+        canvas#graph2 
+      .three 
+        canvas#graph3
+      .four
+        canvas#graph4
+      .five
+        canvas#graph5

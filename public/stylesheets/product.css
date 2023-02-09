@@ -96,4 +96,18 @@ p {
 
 .product {
   background-color: "";
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fat {
+  font-weight: 900;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=product.css.map */

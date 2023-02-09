@@ -4,10 +4,6 @@ html
     title= title
     link(rel="stylesheet", href=`${stylesheet}`)
     script(src="https://cdn.jsdelivr.net/npm/chart.js")
-    
-    script
-      const myChart = new Chart(ctx, {...});
-
 
   body
     header
@@ -26,7 +22,7 @@ html
             .navitem
               a(href='/data') Data
           li 
-            button.btn.signin sign in
+            button.btn.signin signin
 
     main
       block content
@@ -43,10 +39,14 @@ html
       section.links
         h3 hehelekjlj 
         ul 
-          li About 
-          li Careers 
-          li Blog 
-          li Contact
+          li 
+            a About 
+          li 
+            a Careers 
+          li 
+            a Blog 
+          li 
+            a Contact
       section.links
         h2 hehelekjlj 
         p jpkfezjpfezjpzjp pojzpdjzpo jplzk 
