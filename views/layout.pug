@@ -10,7 +10,8 @@ html
       nav 
         .logo-container 
           .img-container
-            img(src='./images/logo.png')
+            a(href="/")
+              img(src='./images/logo.png')
         ul.navitems-container 
           li 
             .navitem 
@@ -22,7 +23,7 @@ html
             .navitem
               a(href='/data') Data
           li 
-            button.btn.signin signin
+            button.btn.signin Sign in
 
     main
       block content

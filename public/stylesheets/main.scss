@@ -35,7 +35,7 @@ body {
       align-items: center;
       border-radius: $br-5 $br-5;
       padding: 0px $space3;
-      background-color: $secondary-color;
+      background-color: $primary-color;
       ul {
         display: flex;
         gap: $space1;
@@ -84,9 +84,18 @@ body {
 }
 .flex {
   display: flex;
+  align-items: center;
+  justify-content: center;
   &.gap-10{
     gap: $space1;
   }
+  &.gap-20{
+    gap: $space2;
+  }
+  &.gap-30{
+    gap: $space3;
+  }
+
 }
 
 .flex-column {
@@ -95,12 +104,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .functionnalities article :nth-child(even) {
   flex-direction: row-reverse;
 }
 
 .btn {
-  padding: 10px 42px;
+  padding: 5px 42px;
   background-color: $fifth-color;
   color: $sixth-color;
   border: none;
