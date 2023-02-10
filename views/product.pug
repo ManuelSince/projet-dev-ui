@@ -7,9 +7,9 @@ block content
     nav(aria-label="breadcrumb")
       ol.breadcrumb
         li.breadcrumb-item
-          a(href="index.html") Accueil
+          a(href="/") Accueil
         li.breadcrumb-item.active  
-          a(href="produit.html",aria-current="page") Produit
+          a(href="/product",aria-current="page") Produit
     
     section.product 
       .img 
@@ -20,15 +20,63 @@ block content
         p Home is behind the world ahead and there are many paths to tread through shadows to the 
         
         input(type="radio" name="color" value="orange" id="orange") 
-        label(for="orange") orange
+        label(for="orange" id="lab_orange") 
         
         input(type="radio" name="color" value="pink"  id="pink")
-        label(for="pink") pink
+        label(for="pink" id="lab_pink") 
         
         input(type="radio" name="color" value="green"  id="green")
-        label(for="green") green
+        label(for="green" id="lab_green") 
         
-        button.btn(type="button") Add to cart
+        button.d-flex.btn(type="button") Add to cart
+
+    section.avis
+      div.title
+        h2.text-center  Avis 
+        p.text-center  error maxime consectetur reiciendis nobis quae id fugit praesentium ipsa temporibus saepe.
+      div.div-avis
+        article.text-center
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+
+          p Musicians,actors and influencers plan social media takeover to support
+          p  #MarchForOurLives 
+          p
+            span  Bertam Jensen 
+          p Author at Panoply Store
+        article.text-center
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+      
+          p Musicians,actors and influencers plan social media takeover to support
+          p  #MarchForOurLives
+          p
+            span  Bertam Jensen 
+          p Author at Panoply Store
+        article.text-center 
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+          img(src="./images/star-rate.png", alt="")
+          p Musicians,actors and influencers plan social media takeover to support
+          p  #MarchForOurLives 
+          p
+            span  Bertam Jensen 
+          p Author at Panoply Store  
+      
+      
+
+
+
+    section.video.bg-secondary-color  
+      h2 Video de présentation 
+      div.div-video
+        iframe(src="https://www.youtube.com/embed/K1KUny3pqLQ" title="Découvrez Lilo Connect de Prêt à Pousser: Le jardin d'intérieur connecté, compact et intuitif" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+
 
     
 

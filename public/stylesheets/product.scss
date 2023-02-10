@@ -1,51 +1,118 @@
 @import "main";
-main {
-  /*-------------------Section produit ----------------*/
-  .product {
+
+/*-------------------Section produit ----------------*/
+
+.product {
     background-color: $fourth-color;
     margin-left: 10px;
     display: flex;
     justify-content: center;
     justify-content: space-around;
-  }
-  /*-----------------btn radio-------------------*/
-  input[name="color"] {
+    label {
+        display: inline-block;
+        padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        // border: 2px solid black;
+        &#lab_orange {
+            background-color: $fifth-color;
+        }
+        &#lab_pink {
+            background-color: $tertiary-color;
+        }
+        &#lab_green {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+
+/*-----------------btn radio-------------------*/
+
+input[name="color"] {
     appearance: none;
-  }
-  .product.input[name="color"] + label {
-    color: darkslategray;
-    display: inline-block;
-    border: 1px solid rgb(211, 211, 211);
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgb(223, 216, 216);
-  }
-  input[name="color"]:checked + label {
-    color: darkslategray;
-    background-color: ghostwhite;
-  }
-  /*-----------------------*/
-  .breadcrumb a {
+}
+
+input[name="color"]checked+label:first-of-type {
+    border: 1px solid black;
+    background-color: red;
+}
+
+
+/*-----------------------*/
+
+.breadcrumb a {
     text-decoration: none;
-  }
-  .breadcrumb a:visited {
+}
+
+.breadcrumb a:visited {
     text-decoration: none;
     color: black;
-  }
-  .slide {
+}
+
+
+/*---------slide --------------*/
+
+.slide {
     width: 50%;
     height: 300px;
-  }
-  .carousel-item {
+}
+
+.carousel-item {
     // height: 400px;
     background-color: #d78de3;
-  }
-  .carousel-item img {
+}
+
+.carousel-item img {
     mix-blend-mode: multiply;
     // height: 400px;
     object-fit: cover;
     position: center;
-  }
+}
+
+
+/*------------------------Section avis */
+
+section.avis {
+    /*entete title et p*/
+    div.title {
+        margin: auto;
+        padding: 40px;
+        max-width: 25%;
+    }
+    .div-avis {
+        display: flex;
+        justify-content: center;
+        article {
+            max-width: 25%;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid black;
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+
+/*----------------section video de présentation------------*/
+
+section.video {
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // .div-video {
+    //     width: 555px;
+    //     height: 555px;
+    // }
+    frame {
+        width: 555px;
+        height: 555px;
+    }
 }

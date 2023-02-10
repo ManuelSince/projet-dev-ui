@@ -56,7 +56,7 @@ body footer .round {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  background-color: red;
+  color: red;
 }
 
 .flex {
@@ -93,7 +93,7 @@ body footer .round {
 }
 
 .bg-secondary-color {
-  background-color: rgb(159, 196, 143);
+  background-color: rgb(235, 255, 235);
 }
 
 .bg-teriary-color {
@@ -125,7 +125,7 @@ body footer .round {
   background-color: rgb(255, 157, 51);
   color: rgb(30, 32, 30);
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid transparent;
   box-shadow: -4px 6px 16px -3px rgba(0, 0, 0, 0.5);
 }
