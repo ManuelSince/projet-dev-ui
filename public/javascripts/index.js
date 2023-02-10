@@ -10,7 +10,7 @@
   //--------------------------------------chart type bar --------------------------
 
   // const { getRelativePosition } = getRelative
-
+  
   const ctx = u.getByid('graph1')
   const data = [
     { year: 2010, count: 10 },
