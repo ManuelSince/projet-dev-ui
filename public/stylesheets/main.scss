@@ -1,30 +1,14 @@
-
-// ----- global variables ------ 
-
-$primary-color: rgba(252,252,252);
-$secondary-color: rgba(159, 196, 143);
-$tertiary-color: rgba(253,230,240);
-$fourth-color: rgba(255,245,210);
-$fifth-color: rgba(255,157,51);
-$sixth-color: rgba(30,32,30);
-$text: rgba(30,32,30, 0.5);
-$interactive-color: '';
-$desktop-margin-layout: 5vw;
-$mobile-margin-layout: 1%;
-$font-size : 13px;
-
-$space1: 1rem;
-$space2: 2rem;
-$space3: 3rem;
-$br-5: 5px;
-$br-10: 10px;
-
+// ----- global variables ------
+@import "globals";
 // ------ layout -----
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
+
 body {
-  margin: 0 $desktop-margin-layout;
+  //margin: 0 $desktop-margin-layout;
   padding: $space1;
   background-color: $primary-color;
   color: $sixth-color;
@@ -59,18 +43,15 @@ body {
     display: flex;
     justify-content: space-between;
     padding: $space3;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     border-radius: $br-5 $br-5;
     section {
       width: 15%;
       ul {
         list-style: none;
         padding: 0;
-        
         li {
           margin: $space1 0;
-
-          
         }
       }
     }
@@ -82,20 +63,29 @@ body {
     }
   }
 }
+
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
-  &.gap-10{
+  &.gap-10 {
     gap: $space1;
   }
-  &.gap-20{
+  &.gap-20 {
     gap: $space2;
   }
-  &.gap-30{
+  &.gap-30 {
     gap: $space3;
   }
-
+  @media screen and (max-width: 680px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 680px) and (max-width: 1250px) {
+  }
+  @media screen and (min-width: 1250px) {
+  }
 }
 
 .flex-column {
@@ -103,6 +93,36 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+// background colors
+.bg-primary-color {
+  background-color: $primary-color;
+}
+
+.bg-secondary-color {
+  background-color: $secondary-color;
+}
+
+.bg-teriary-color {
+  background-color: $tertiary-color;
+}
+
+.bg-fourth-color {
+  background-color: $fourth-color;
+}
+
+.bg-fifth-color {
+  background-color: $fifth-color;
+}
+
+.bg-sixth-color {
+  background-color: $sixth-color;
+}
+
+.relative {
+  position: relative;
 }
 
 .functionnalities article :nth-child(even) {
@@ -116,6 +136,7 @@ body {
   border: none;
   border-radius: $br-10;
   border: 1px solid transparent;
+  box-shadow: -4px 6px 16px -3px rgba(0, 0, 0, 0.5);
   &:hover {
     cursor: pointer;
     background-color: $primary-color;
@@ -123,29 +144,36 @@ body {
     color: $sixth-color;
   }
 }
+
 a {
   text-decoration: none;
   color: $sixth-color;
 }
+
 p {
   color: $text;
 }
 
 .home {
-  background-color: '';
+  background-color: "";
 }
+
 .data {
-  background-color: '';
+  background-color: "";
 }
+
 .product {
-  background-color: ''
+  background-color: "";
 }
+
 .text-center {
   text-align: center;
 }
+
 .fat {
   font-weight: 900;
 }
+
 .round {
   border-radius: 50%;
 }
@@ -153,6 +181,7 @@ p {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  &.center {
+    align-items: center;
+  }
 }
-

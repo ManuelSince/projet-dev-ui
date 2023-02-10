@@ -1,41 +1,39 @@
 extends layout
-h1 titre sam test
+
 block content
 
-  main.product 
+  main
     h1 #{title}
-    section.product
-      div.carousel 
-      div.product-details
-        h2.price 
-        h2.product-name
-        p.product-description
-        input(type='radio', name='product-color', value='')
+    nav(aria-label="breadcrumb")
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href="index.html") Accueil
+        li.breadcrumb-item.active  
+          a(href="produit.html",aria-current="page") Produit
+    
+    section.product 
+      .img 
+        img(src="https://fakeimg.pl/300x300", alt="")
+      article 
+        h2 54.99 €
+        h3 Long or short product name goes here 
+        p Home is behind the world ahead and there are many paths to tread through shadows to the 
+        
+        input(type="radio" name="color" value="orange" id="orange") 
+        label(for="orange") orange
+        
+        input(type="radio" name="color" value="pink"  id="pink")
+        label(for="pink") pink
+        
+        input(type="radio" name="color" value="green"  id="green")
+        label(for="green") green
+        
+        button.btn(type="button") Add to cart
+
+    
 
 
-    section.team
-      h2 Team 
-      p Home is behind the world denkned ,nfekn e ,fenk n ek, nek,  ce,v , 
-      article
-        img(src='./images/logo.png')
-        h3 
-        p jdejdeodeokode kde,jk,efoekd,elkf,fk,kfe,kfe 
-        .flex 
-          img(src="https://fakeimg.pl/250x100/")
-          img
-      article
-        img(src='./images/logo.png')
-        h3 
-        p jdejdeodeokode kde,jk,efoekd,elkf,fk,kfe,kfe 
-        .flex 
-          img(src="")
-          img(src="")
-      article
-        img(src='./images/logo.png')
-        h3 
-        p jdejdeodeokode kde,jk,efoekd,elkf,fk,kfe,kfe 
-        .flex 
-          img(src="")
-          img(src="")
+
+  
 
     
