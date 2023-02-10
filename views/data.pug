@@ -2,19 +2,19 @@ extends layout
 
 block content
   main.data
-    h1 #{title}
-    article.hero.flex.gap-1 
+    article.hero.flex.gap-20.bg-fourth-color.p-y-2 
       div.flex-column
         h1 Lets make 
         h2.fat something great
       div.round 
-        img(src="https://fakeimg.pl/250x250/", alt="" class="round")
+        img(src="./images/photos/jardiniere2.jpg" width=300 height=300 alt="" class="round")
     section.functionnalities
-      article.flex.card 
-        img(src="https://fakeimg.pl/250x250/", alt="fake")
+      article.flex
+        canvas#graph1
         div.flex-column 
           h3 it's easy to use our wireframe 
-          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, voluptas! Non inventore 
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, voluptas! Non inventore
+          a(href="#").btn Purchase Now
       
       article.flex.card 
         img(src="https://fakeimg.pl/250x250/", alt="fake")
