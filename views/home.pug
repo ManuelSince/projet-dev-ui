@@ -1,9 +1,9 @@
 extends layout
 
 block content
-  main.home
+  main.home.center
     //h1 #{title}
-    section.bg-fourth-color
+    section.hero.bg-fourth-color
       article.flex.gap-30
         div 
           div 
@@ -12,6 +12,21 @@ block content
           h1 Planty, votre jardinière connectée 
           p Home is behind, the world ahead and there are many paths to tread through shadows to the edge.
           a(href="/product").btn Purchase Now
+
+    section.bg-primary-color
+      article.flex
+        div 
+          img(src="https://fakeimg.pl/250x250/")
+        div 
+          h3 SOLDES SOLDES SOLDES 
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi ex aliquid voluptatum perspiciatis est ipsa
+          a(href="/product") Purchase Now 
+      section.flex-column 
+        article.flex-column.relative 
+          img(src="https://fakeimg.pl/150x150/")
+          div.price.bg-fifth-color 45.9 euros
+          h4 Pot connecté
+
 
     section
       h2 Nom du produit

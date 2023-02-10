@@ -3,7 +3,6 @@
 }
 
 body {
-  margin: 0 5vw;
   padding: 1rem;
   background-color: rgb(252, 252, 252);
   color: rgb(30, 32, 30);
@@ -38,7 +37,7 @@ body footer {
   display: flex;
   justify-content: space-between;
   padding: 3rem;
-  background-color: rgb(159, 196, 143);
+  background-color: rgb(252, 252, 252);
   border-radius: 5px 5px;
 }
 body footer section {
@@ -72,12 +71,47 @@ body footer .round {
 .flex.gap-30 {
   gap: 3rem;
 }
-
+@media screen and (max-width: 680px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .flex-column {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+.bg-primary-color {
+  background-color: rgb(252, 252, 252);
+}
+
+.bg-secondary-color {
+  background-color: rgb(159, 196, 143);
+}
+
+.bg-teriary-color {
+  background-color: rgb(253, 230, 240);
+}
+
+.bg-fourth-color {
+  background-color: rgb(255, 245, 210);
+}
+
+.bg-fifth-color {
+  background-color: rgb(255, 157, 51);
+}
+
+.bg-sixth-color {
+  background-color: rgb(30, 32, 30);
+}
+
+.relative {
+  position: relative;
 }
 
 .functionnalities article :nth-child(even) {
@@ -91,6 +125,7 @@ body footer .round {
   border: none;
   border-radius: 10px;
   border: 1px solid transparent;
+  box-shadow: -4px 6px 16px -3px rgba(0, 0, 0, 0.5);
 }
 .btn:hover {
   cursor: pointer;
@@ -135,9 +170,18 @@ p {
 main {
   display: flex;
   flex-direction: column;
+}
+main.center {
   align-items: center;
 }
 
-main .bg-fourth-color {
-  background-color: rgb(255, 245, 210);
+main section.hero {
+  width: 100vw;
+}
+main .price {
+  position: absolute;
+  top: -15px;
+  display: block;
+  width: 50px;
+  height: 20px;
 }/*# sourceMappingURL=home.css.map */
