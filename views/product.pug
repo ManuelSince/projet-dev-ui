@@ -2,7 +2,7 @@ extends layout
 
 block content
 
-  main
+  main.p-x-4
     h1 #{title}
     nav(aria-label="breadcrumb")
       ol.breadcrumb
@@ -11,7 +11,7 @@ block content
         li.breadcrumb-item.active  
           a(href="/product",aria-current="page") Produit
     
-    section.product 
+    section.product.p-y-4.mx-10
       .img 
         img(src="https://fakeimg.pl/300x300", alt="")
       article 
@@ -30,7 +30,7 @@ block content
         
         button.d-flex.btn(type="button") Add to cart
 
-    section.avis
+    section.avis.p-y-2
       div.title
         h2.text-center  Avis 
         p.text-center  error maxime consectetur reiciendis nobis quae id fugit praesentium ipsa temporibus saepe.
@@ -72,7 +72,7 @@ block content
 
 
 
-    section.video.bg-secondary-color  
+    section.video.bg-secondary-color.p-y-2  
       h2 Video de présentation 
       div.div-video
         iframe(src="https://www.youtube.com/embed/K1KUny3pqLQ" title="Découvrez Lilo Connect de Prêt à Pousser: Le jardin d'intérieur connecté, compact et intuitif" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
