@@ -8,12 +8,20 @@ main {
   section.hero {
     width: 100vw;
   }
+  section {
+    &.py-2 {
+      padding-bottom: 163px;
+      padding-top: 163px;
+    }
+  }
   .price {
     position: absolute;
     top: -15px;
     display: block;
     width: 50px;
     height: 20px;
+    text-align: center;
+    font-size: .8rem;
 
   }
 }
