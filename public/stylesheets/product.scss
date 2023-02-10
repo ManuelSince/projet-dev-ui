@@ -1,63 +1,51 @@
 @import "main";
-
-/*---------------page produits ---------------*/
-
-/*-------------------Section produit ----------------*/
-
-.product {
-  background-color: $fourth-color;
-  margin-left: 10px;
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
-
-/*-----------------btn radio-------------------*/
-
-input[name="color"] {
-  appearance: none;
-}
-
-.product.input[name="color"] + label {
-  color: darkslategray;
-  display: inline-block;
-  border: 1px solid rgb(211, 211, 211);
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: rgb(223, 216, 216);
-}
-
-input[name="color"]:checked + label {
-  color: darkslategray;
-  background-color: ghostwhite;
-}
-
-/*-----------------------*/
-
-.breadcrumb a {
-  text-decoration: none;
-}
-
-.breadcrumb a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-.slide {
-  width: 50%;
-  height: 300px;
-}
-
-.carousel-item {
-  // height: 400px;
-  background-color: #d78de3;
-}
-
-.carousel-item img {
-  mix-blend-mode: multiply;
-  // height: 400px;
-  object-fit: cover;
-  position: center;
+main {
+  /*-------------------Section produit ----------------*/
+  .product {
+    background-color: $fourth-color;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  /*-----------------btn radio-------------------*/
+  input[name="color"] {
+    appearance: none;
+  }
+  .product.input[name="color"] + label {
+    color: darkslategray;
+    display: inline-block;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(223, 216, 216);
+  }
+  input[name="color"]:checked + label {
+    color: darkslategray;
+    background-color: ghostwhite;
+  }
+  /*-----------------------*/
+  .breadcrumb a {
+    text-decoration: none;
+  }
+  .breadcrumb a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  .slide {
+    width: 50%;
+    height: 300px;
+  }
+  .carousel-item {
+    // height: 400px;
+    background-color: #d78de3;
+  }
+  .carousel-item img {
+    mix-blend-mode: multiply;
+    // height: 400px;
+    object-fit: cover;
+    position: center;
+  }
 }
